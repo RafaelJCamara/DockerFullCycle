@@ -15,7 +15,7 @@ const sql = `INSERT INTO people(name) values('Rafael')`;
 connection.query(sql);
 connection.end();
 
-app.get("/:name", (req,res)=>{
+app.get("/", (req,res)=>{
     /*
     const {name} = req.params;
     const sql = `INSERT INTO people(name) values('${name}')`;
